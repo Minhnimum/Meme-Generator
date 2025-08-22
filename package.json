@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s06j1ha",
-  "description": "https://scrimba.com/frontend-path-c0j/~05dd",
+  "name": "meme-generator",
+  "description": "Memegenrator using imgflip api",
   "scripts": {
     "start": "vite",
     "dev": "vite",
