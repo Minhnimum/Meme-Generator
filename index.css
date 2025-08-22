@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+
+main {
+    margin-inline: auto;
+    padding: 36px;
+    max-width: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+}
+
+.header > img {
+    height: 100%;
+    margin-right: 6px;
+}
+
+.header > h1 {
+    font-size: 1.25rem;
+    margin-right: auto;
+}
+
+.form {
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.form input {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.form button {
+    grid-column: 1 / -1;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form input, .form button {
+    min-height: 40px;
+    font-family: "Karla", sans-serif;
+}
+
+.meme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.meme span {
+    position: absolute;
+    text-align: center;
+    margin-block: 15px;
+    padding-inline: 5px;
+    font-family: impact, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.text-controls {
+    grid-column: span 1;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.text-controls h3 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.text-controls label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.text-controls input[type="range"] {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Removed custom slider styling - using browser default */
+
+.text-controls input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.size-control {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.size-control input[type="range"] {
+    width: 100%;
+    margin: 0;
+}
+
+.size-input {
+    width: 60px;
+    height: 26px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 2px 3px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.color-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.color-controls label {
+    flex: 1;
+    margin-bottom: 0 !important;
+}
